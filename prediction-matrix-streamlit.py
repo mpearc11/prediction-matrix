@@ -21,23 +21,23 @@ pid = st.text_input()
 conscore = st.text_input()
 foldscore = st.text_input()
 
-if pid <= 100 and if pid >= 90:
+if pid <= 100 and pid >= 90:
   pid_guide = A
-if pid < 90 and if pid >= 75:
+if pid < 90 and pid >= 75:
   pid_guide = B
-if pid < 75 and if pid >= 25:
+if pid < 75 and pid >= 25:
   pid_guide = C
 
 if conscore <= 200:
   conscore_guide = 1
-if conscore <= 1000 and if conscore >= 200:
+if conscore <= 1000 and conscore >= 200:
   conscore_guide = 2
 if conscore > 1000:
   conscore_guide = 3
 
 if foldscore <= 15:
   foldscore_guide = A
-if foldscore <= 50 and if foldscore > 15:
+if foldscore <= 50 and foldscore > 15:
   foldscore_guide = B
 if foldscore > 50:
   foldscore_guide = C
