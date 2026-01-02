@@ -1,0 +1,45 @@
+import streamlit as st
+from Bio import Blast
+from Bio import Align
+from Bio.Seq import Seq
+from Bio.SeqRecord import SeqRecord
+from Bio import SeqIO
+from io import StringIO
+from Bio import AlignIO
+from Bio.Align.Applications import ClustalOmegaCommandline
+import pandas as pd
+import tempfile
+import os
+import numpy as np
+from pandas import DataFrame
+
+st.title('Prediction Matrix')
+
+st.header('Input PID, ConScore, and FoldScore Values')
+
+pid = st.text_input()
+conscore = st.text_input()
+foldscore = st.text_input()
+
+if pid <= 100 and if pid >= 90:
+  pid_guide = A
+if pid < 90 and if pid >= 75:
+  pid_guide = B
+if pid < 75 and if pid >= 25:
+  pid_guide = C
+
+if conscore <= 200:
+  conscore_guide = 1
+if conscore <= 1000 and if conscore >= 200:
+  conscore_guide = 2
+if conscore > 1000:
+  conscore_guide = 3
+
+if foldscore <= 15:
+  foldscore_guide = A
+if foldscore <= 50 and if foldscore > 15:
+  foldscore_guide = B
+if foldscore > 50:
+  foldscore_guide = C
+
+st.write(pid_guide, conscore_guide, foldscore_guide)
