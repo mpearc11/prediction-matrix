@@ -51,4 +51,4 @@ tm_dict = {'A1a':'no change','A1b':'-2.0','A1c':'no change','A2a':'-2.5','A2b':'
 
 #search dictionary based on matrix guide
 st.write('delta Tm = ', tm_dict[matrix_guide])
-st.write('delta specific activity = ' sa_dict[matrix_guide])
+st.write('delta specific activity = ', sa_dict[matrix_guide])
