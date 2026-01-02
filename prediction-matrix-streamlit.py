@@ -22,24 +22,24 @@ conscore = int(st.text_input('enter your target ConScore'))
 foldscore = int(st.text_input('enter your target FoldScore'))
 
 if pid <= 100 and pid >= 90:
-  pid_guide = A
+  pid_guide = 'A'
 if pid < 90 and pid >= 75:
-  pid_guide = B
+  pid_guide = 'B'
 if pid < 75 and pid >= 25:
-  pid_guide = C
+  pid_guide = 'C'
 
 if conscore <= 200:
-  conscore_guide = 1
+  conscore_guide = '1'
 if conscore <= 1000 and conscore >= 200:
-  conscore_guide = 2
+  conscore_guide = '2'
 if conscore > 1000:
-  conscore_guide = 3
+  conscore_guide = '3'
 
 if foldscore <= 15:
-  foldscore_guide = A
+  foldscore_guide = 'a'
 if foldscore <= 50 and foldscore > 15:
-  foldscore_guide = B
+  foldscore_guide = 'b'
 if foldscore > 50:
-  foldscore_guide = C
+  foldscore_guide = 'c'
 
 st.write(pid_guide, conscore_guide, foldscore_guide)
