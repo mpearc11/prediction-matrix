@@ -17,9 +17,9 @@ st.title('Prediction Matrix')
 
 st.header('Input PID, ConScore, and FoldScore Values')
 
-pid = st.text_input()
-conscore = st.text_input()
-foldscore = st.text_input()
+pid = st.text_input('enter your target PID')
+conscore = st.text_input('enter your target ConScore')
+foldscore = st.text_input('enter your target FoldScore')
 
 if pid <= 100 and pid >= 90:
   pid_guide = A
