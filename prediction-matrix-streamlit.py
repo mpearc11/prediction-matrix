@@ -17,10 +17,9 @@ st.title('Prediction Matrix')
 
 st.header('Input PID, ConScore, and FoldScore Values')
 
-try:
-  pid = float(st.text_input('enter your target PID'))
-except ValueError:
-  pass
+
+pid = float(st.text_input('enter your target PID','100'))
+
 try:
   conscore = float(st.text_input('enter your target ConScore'))
 except ValueError:
