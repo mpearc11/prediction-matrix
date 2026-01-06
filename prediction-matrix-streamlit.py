@@ -19,15 +19,9 @@ st.header('Input PID, ConScore, and FoldScore Values')
 
 
 pid = float(st.text_input('enter your target PID','100'))
+conscore = float(st.text_input('enter your target ConScore','1000'))
+foldscore = float(st.text_input('enter your target FoldScore','50'))
 
-try:
-  conscore = float(st.text_input('enter your target ConScore'))
-except ValueError:
-  pass
-try:
-  foldscore = float(st.text_input('enter your target FoldScore'))
-except ValueError:
-  pass
 
 if pid <= 100 and pid >= 90:
   pid_guide = 'A'
