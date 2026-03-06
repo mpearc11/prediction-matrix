@@ -15,11 +15,11 @@ from pandas import DataFrame
 
 st.title('Prediction Matrix')
 
-st.header('Input PID, ConScore, and FoldScore Values')
+st.header('Input PID, EvoScore, and FoldScore Values')
 
 
 pid = float(st.text_input('enter your target PID','100'))
-conscore = float(st.text_input('enter your target ConScore','1000'))
+conscore = float(st.text_input('enter your target EvoScore','1000'))
 foldscore = float(st.text_input('enter your target FoldScore','50'))
 
 
