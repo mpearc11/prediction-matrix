@@ -45,12 +45,12 @@ if foldscore > 50:
   foldscore_guide = 'c'
 
 matrix_guide = pid_guide + conscore_guide + foldscore_guide
-st.write(matrix_guide)
+st.write('Matrix Guide is ', matrix_guide)
 
 #make dictionary for Tm and specific activity look up
 tm_dict = {'A1a':'no change','A1b':'-2.0','A1c':'no change','A2a':'-2.5','A2b':'-7.5','A2c':'+2.5','A3a':'-5.0','A3b':'-10.0','A3c':'+5.0','B1a':'-2.0','B1b':'-5.0','B1c':'-2.0','B2a':'-5.0','B2b':'-10.0','B2c':'+5.0','B3a':'-7.5','B3b':'-12.0','B3c':'+7.5','C1a':'-2.0','C1b':'-7.5','C1c':'-5.0','C2a':'+2.0','C2b':'+10.0','C2c':'+12.0','C3a':'-5.0','C3b':'-7.5','C3c':'+10.0'}
 sa_dict = {'A1a':'no change','A1b':'-4.0','A1c':'no change','A2a':'-5.0','A2b':'-8.0','A2c':'-2.0','A3a':'+3.0','A3b':'+5.0','A3c':'+8.0','B1a':'-4.0','B1b':'-6.0','B1c':'no change','B2a':'+2.0','B2b':'-3.0','B2c':'-10.0','B3a':'-2.0','B3b':'no change','B3c':'+4.0','C1a':'no change','C1b':'+2.0','C1c':'+6.0','C2a':'-5.0','C2b':'-10.0','C2c':'-15.0','C3a':'-10.0','C3b':'-12.0','C3c':'-15.0'}
 
 #search dictionary based on matrix guide
-st.write('delta Tm = ', tm_dict[matrix_guide])
-st.write('delta specific activity = ', sa_dict[matrix_guide])
+st.write('Change in Buffer B Tm (degrees Celsius) = ', tm_dict[matrix_guide])
+st.write('Change in Specific Activity = ', sa_dict[matrix_guide])
