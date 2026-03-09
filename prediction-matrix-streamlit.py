@@ -30,11 +30,11 @@ if pid < 90 and pid >= 75:
 if pid < 75 and pid >= 25:
   pid_guide = 'C'
 
-if conscore <= 200:
+if conscore < 10:
   conscore_guide = '1'
-if conscore <= 1000 and conscore >= 200:
+if conscore <= 30 and conscore >= 10:
   conscore_guide = '2'
-if conscore > 1000:
+if conscore > 30:
   conscore_guide = '3'
 
 if foldscore <= 15:
